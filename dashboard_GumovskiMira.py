@@ -84,7 +84,7 @@ def GumowskiMira_bifurcation(a=0.30, b=0.20, mu_min=-0.6, mu_max=0.6):
     ax.scatter(param_values, bifurcation_diagram, color='black', s=0.05, edgecolor='none')
 
     # Set the labels and limits for the plot
-    ax.set_xlim(param_range[1], param_range[0])
+    ax.set_xlim(param_range[0], param_range[1])
     ax.set_ylabel("$x$")
     ax.set_xlabel("$b$")
 
@@ -223,7 +223,7 @@ if selected == "Attractors":
     # Streamlit sliders for interactive input
     a = st.slider('Parameter a', 0.0, 1.0, 0.01, 0.01)
     b = st.slider('Parameter b', 0.0, 1.0, 0.05, 0.01)
-    mu = st.slider('Parameter mu', -0.99, 0.99, -0.8, 0.01)
+    mu = st.slider('Parameter μ', -0.99, 0.99, -0.8, 0.01)
 
     # Generate the plot
     fig = plot_gumowski_mira(a, b, mu)
@@ -257,3 +257,4 @@ if selected == "Parameter Space a×b":
     st.header("Parameter Space a×b")
 
     st.video("Videos/Animation_Parameter_Space_mu_GumovskiMira.mp4", format='video/mp4')
+
