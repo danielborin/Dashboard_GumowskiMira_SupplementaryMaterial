@@ -4,7 +4,7 @@ This repository contains the supplementary material for the paper **"Parameter S
 ## Live Demo
 
 You can view the interactive dashboard here:  
-[Live Dashboard Link](gumovskimira.streamlit.app)
+[Live Dashboard Link](<gumovskimira.streamlit.app>)
 
 ## Running the Dashboard Locally
 
