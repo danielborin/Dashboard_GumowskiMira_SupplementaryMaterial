@@ -1,6 +1,11 @@
 # Dashboard_GumovskiMira_SupplementaryMaterial
 This repository contains the supplementary material for the paper **"Parameter Space for Gumovski-Mira Map"** authored by **Diego Fregolent Mendes de Oliveira** and **Daniel Borin**. The goal of this project is to provide an interactive platform to explore the parameter space of the **Gumovski-Mira Map** using a **Streamlit** dashboard.
 
+## Live Demo
+
+You can view the interactive dashboard here:  
+[Live Dashboard Link](<Insert the link to the live dashboard>)
+
 ## Running the Dashboard Locally
 
 To run this Streamlit dashboard locally, follow these steps:
@@ -35,26 +40,9 @@ This will launch the Streamlit app in your default web browser.
 
 ## Requirements
 
-To run the dashboard locally, you'll need the following Python libraries:
+To run the dashboard locally, you'll need the Python libraries which are listed in the `requirements.txt` file and can be installed using `pip`.
 
-- `streamlit` – for building the interactive dashboard.
-- `numpy` – for numerical operations and arrays.
-- `matplotlib` – for creating the visualizations (bifurcation diagrams, attractors).
-- `pandas` – for handling data frames (if needed).
-- `numba` – for optimized performance in numerical computations.
-- `pynamicalsys` – for simulating the dynamical system (Gumovski-Mira map).
-- `streamlit-option-menu` – for creating the navigation menu in the sidebar.
+## Contact
+For questions or feedback, feel free to [email me](d.borin[at]hotmail.com).
 
-These dependencies are listed in the `requirements.txt` file and can be installed using `pip`.
-
-## How to Contribute
-
-If you find any issues or have suggestions for improvement, feel free to open an issue or submit a pull request. Contributions are welcome!
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Author
-- **Daniel Borin**
 For more information, visit the [author's homepage](https://danielborin.github.io).
