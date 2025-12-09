@@ -56,8 +56,7 @@ def GumowskiMira_bifurcation(a=0.30, b=0.20, mu_min=-0.6, mu_max=0.6):
 
     # Generate the bifurcation diagram for varying 'mu'
     param_index = 2
-    param_range = (-0.6, 0.6, 1000)
-    param_range_back = (0.6, -0.6, 1000)
+    param_range = (mu_min, mu_max, 1000)
 
     param_values, bifurcation_diagram, u_new = ds.bifurcation_diagram(
         u=u0,
@@ -73,44 +72,21 @@ def GumowskiMira_bifurcation(a=0.30, b=0.20, mu_min=-0.6, mu_max=0.6):
     param_values = param_mesh.flatten()
     bifurcation_diagram = bifurcation_diagram.flatten()
 
-    param_values_back, bifurcation_diagram_back = ds.bifurcation_diagram(
-        u=u_new,
-        parameters=parameters,
-        param_index=param_index,
-        param_range=param_range_back,
-        total_time=total_time,
-        transient_time=transient_time
-    )
-
-    param_mesh_back = np.repeat(param_values_back[:, np.newaxis], bifurcation_diagram_back.shape[1], axis=1)
-    param_values_back = param_mesh_back.flatten()
-    bifurcation_diagram_back = bifurcation_diagram_back.flatten()
-
     # Set the style for the plot
     ps = PlotStyler()
     ps.apply_style()
 
     # Create the figure and axis
-    fig, ax = plt.subplots(2, 1, figsize=(10, 6), sharex=True, sharey=True)
+    fig, ax = plt.subplots(figsize=(10, 4))
     # ps.set_tick_padding(ax[1], pad_x=6))
 
     # Plot the bifurcation diagram
-    ax[0].scatter(param_values, bifurcation_diagram, color='black', s=0.05, edgecolor='none')
-    ax[1].scatter(param_values_back, bifurcation_diagram_back, color='r', s=0.05, edgecolor='none')
+    ax.scatter(param_values, bifurcation_diagram, color='black', s=0.05, edgecolor='none')
 
     # Set the labels and limits for the plot
-    ax[0].set_xlim(param_range[1], param_range[0])
-    ax[0].set_ylabel("$x$")
-    ax[1].set_ylabel("$x$")
-    ax[1].set_xlabel("$b$")
-
-    # Add arrows to indicate the direction of the bifurcation
-    x_arrow = (1.205, 1.225)
-    y_arrow = 0.1
-    ax[0].annotate("", xy=(x_arrow[1], y_arrow), xytext=(x_arrow[0], y_arrow),
-                   arrowprops=dict(arrowstyle="->", lw=2))
-    ax[1].annotate("", xy=(x_arrow[0], 0.1), xytext=(x_arrow[1], 0.1),
-                   arrowprops=dict(arrowstyle="->", lw=2, color='r'))
+    ax.set_xlim(param_range[1], param_range[0])
+    ax.set_ylabel("$x$")
+    ax.set_xlabel("$b$")
 
     plt.tight_layout(pad=0.1)
 
@@ -279,4 +255,5 @@ if selected == "Parameter Space μ×a":
 
 if selected == "Parameter Space a×b":
     st.header("Parameter Space a×b")
+
     st.video("Videos/Animation_Parameter_Space_mu_GumovskiMira.mp4", format='video/mp4')
