@@ -14,8 +14,8 @@ To run this Streamlit dashboard locally, follow these steps:
 ### 1. Clone the repository:
 
 ```
-git clone https://github.com/<your-username>/gumovski-mira-dashboard.git
-cd gumovski-mira-dashboard
+git clone https://github.com/danielborin/Dashboard_GumovskiMira_SupplementaryMaterial.git
+cd Dashboard_GumovskiMira_SupplementaryMaterial
 ```
 
 ### 2. Set up a virtual environment (optional but recommended):
