@@ -4,6 +4,7 @@ This repository contains the supplementary material for the paper **"Parameter S
 ## Live Demo
 
 You can view the interactive dashboard here:  
+
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://gumovskimira.streamlit.app)
 
 ## Running the Dashboard Locally
