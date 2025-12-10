@@ -7,6 +7,12 @@ import matplotlib.pyplot as plt
 from numba import njit
 from pynamicalsys import DiscreteDynamicalSystem as dds, PlotStyler
 
+# Set the title and favicon that appear in the Browser's tab bar.
+st.set_page_config(
+    page_title='GumovskiMira dashboard',
+    page_icon='/Figures/fig_attractors_single_plot.png', # This is an emoji shortcode. Could be a URL too.
+)
+
 # Define the Gumowski–Mira map
 @njit
 def Gumowski(x, mu):
@@ -257,5 +263,6 @@ if selected == "Parameter Space a×b":
     st.header("Parameter Space a×b")
 
     st.video("Videos/Animation_Parameter_Space_mu_GumovskiMira.mp4", format='video/mp4')
+
 
 
