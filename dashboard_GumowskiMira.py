@@ -216,7 +216,7 @@ if selected == "Home":
     - The function $G(x, \\mu)$ is defined as:
 
     $
-    \\displaystyle G(x, \mu) = \\mu x + \\frac{2x(1-\\mu)}{1 + x^2}
+    \\displaystyle G(x, \\mu) = \\mu x + \\frac{2x(1-\\mu)}{1 + x^2}
     $
 
     """)
@@ -263,6 +263,7 @@ if selected == "Parameter Space a×b":
     st.header("Parameter Space a×b")
 
     st.video("Videos/Animation_Parameter_Space_mu_GumovskiMira.mp4", format='video/mp4')
+
 
 
 
