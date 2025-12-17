@@ -1,11 +1,11 @@
-# Dashboard_GumovskiMira_SupplementaryMaterial
-This repository contains the supplementary material for the paper **"Parameter Space for Gumovski-Mira Map"** authored by **Diego Fregolent Mendes de Oliveira** and **Daniel Borin**. The goal of this project is to provide an interactive platform to explore the parameter space of the **Gumovski-Mira Map** using a **Streamlit** dashboard.
+# Dashboard_GumowskiMira_SupplementaryMaterial
+This repository contains the supplementary material for the paper **"Parameter Space for Gumowski-Mira Map"** authored by **Diego Fregolent Mendes de Oliveira** and **Daniel Borin**. The goal of this project is to provide an interactive platform to explore the parameter space of the **Gumowski-Mira Map** using a **Streamlit** dashboard.
 
 ## Live Dashboard
 
 You can view the interactive dashboard here:  
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://gumovskimira.streamlit.app)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://gumowskimira.streamlit.app)
 
 ## Running the Dashboard Locally
 
